@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8FF794B-8215-40A8-9076-479BD39BF063}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChiTietHangHoaDAL.cs" />
+    <Compile Include="ChiTietPhieuNhapDAL.cs" />
+    <Compile Include="CTHoaDonDAL.cs" />
+    <Compile Include="DatabaseConnect\DatabaseContext.cs" />
+    <Compile Include="DatabaseConnect\SqlAuthenticationDAL.cs" />
+    <Compile Include="DatabaseConnect\WindowsAuthenticationDAL.cs" />
+    <Compile Include="DTO\BaoCaoCTHoaDonDTO.cs" />
+    <Compile Include="DTO\ChiTietHangHoaDTO.cs" />
+    <Compile Include="DTO\ChiTietHoaDonDTO.cs" />
+    <Compile Include="DTO\ChiTietPhieuNhapDTO.cs" />
+    <Compile Include="DTO\PhieuNhapDTO.cs" />
+    <Compile Include="DTO\SanPhamDTO.cs" />
+    <Compile Include="DuocSiDAL.cs" />
+    <Compile Include="HoaDonDAL.cs" />
+    <Compile Include="KhachHangDAL.cs" />
+    <Compile Include="KhoDAL.cs" />
+    <Compile Include="LoaiDAL.cs" />
+    <Compile Include="NguoiDungDAL.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
+    <Compile Include="NhaSanXuatDAL.cs" />
+    <Compile Include="PhieuNhapDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLHieuThuoc.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHieuThuoc.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLHieuThuoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLHieuThuoc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHieuThuoc.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SanPhamDAL.cs" />
+    <Compile Include="tbl_CHITIETHANGHOA.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CTHOADON.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CTPHIEUNHAP.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DUOCSI.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HOADON.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_KHACHHANG.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_KHO.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LOAI.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_NGUOIDUNG.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_NHACUNGCAP.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_NHASANXUAT.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PHIEUNHAP.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SANPHAM.cs">
+      <DependentUpon>QLHieuThuoc.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="QLHieuThuoc.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLHieuThuoc.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLHieuThuoc.edmx.diagram">
+      <DependentUpon>QLHieuThuoc.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLHieuThuoc.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLHieuThuoc.edmx</DependentUpon>
+      <LastGenOutput>QLHieuThuoc.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLHieuThuoc.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLHieuThuoc.edmx</DependentUpon>
+      <LastGenOutput>QLHieuThuoc.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

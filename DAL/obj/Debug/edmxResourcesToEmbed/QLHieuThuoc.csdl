@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tbl_QLHieuThuocModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="tbl_QLHieuThuocEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_CHITIETHANGHOA" EntityType="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA" />
+    <EntitySet Name="tbl_CTHOADON" EntityType="tbl_QLHieuThuocModel.tbl_CTHOADON" />
+    <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="tbl_QLHieuThuocModel.tbl_CTPHIEUNHAP" />
+    <EntitySet Name="tbl_DUOCSI" EntityType="tbl_QLHieuThuocModel.tbl_DUOCSI" />
+    <EntitySet Name="tbl_HOADON" EntityType="tbl_QLHieuThuocModel.tbl_HOADON" />
+    <EntitySet Name="tbl_KHACHHANG" EntityType="tbl_QLHieuThuocModel.tbl_KHACHHANG" />
+    <EntitySet Name="tbl_KHO" EntityType="tbl_QLHieuThuocModel.tbl_KHO" />
+    <EntitySet Name="tbl_LOAI" EntityType="tbl_QLHieuThuocModel.tbl_LOAI" />
+    <EntitySet Name="tbl_NGUOIDUNG" EntityType="tbl_QLHieuThuocModel.tbl_NGUOIDUNG" />
+    <EntitySet Name="tbl_NHACUNGCAP" EntityType="tbl_QLHieuThuocModel.tbl_NHACUNGCAP" />
+    <EntitySet Name="tbl_NHASANXUAT" EntityType="tbl_QLHieuThuocModel.tbl_NHASANXUAT" />
+    <EntitySet Name="tbl_PHIEUNHAP" EntityType="tbl_QLHieuThuocModel.tbl_PHIEUNHAP" />
+    <EntitySet Name="tbl_SANPHAM" EntityType="tbl_QLHieuThuocModel.tbl_SANPHAM" />
+    <AssociationSet Name="FK_tbl_CHITIETHANGHOA_tbl_KHO" Association="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_KHO">
+      <End Role="tbl_KHO" EntitySet="tbl_KHO" />
+      <End Role="tbl_CHITIETHANGHOA" EntitySet="tbl_CHITIETHANGHOA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_CHITIETHANGHOA_tbl_SANPHAM" Association="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_SANPHAM">
+      <End Role="tbl_SANPHAM" EntitySet="tbl_SANPHAM" />
+      <End Role="tbl_CHITIETHANGHOA" EntitySet="tbl_CHITIETHANGHOA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_CTHOADON_tbl_CHITIETHANGHOA" Association="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_CHITIETHANGHOA">
+      <End Role="tbl_CHITIETHANGHOA" EntitySet="tbl_CHITIETHANGHOA" />
+      <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_CTPHIEUNHAP_tbl_CHITIETHANGHOA" Association="tbl_QLHieuThuocModel.FK_tbl_CTPHIEUNHAP_tbl_CHITIETHANGHOA">
+      <End Role="tbl_CHITIETHANGHOA" EntitySet="tbl_CHITIETHANGHOA" />
+      <End Role="tbl_CTPHIEUNHAP" EntitySet="tbl_CTPHIEUNHAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_CTHOADON_tbl_HOADON" Association="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_HOADON">
+      <End Role="tbl_HOADON" EntitySet="tbl_HOADON" />
+      <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CTPHIEUNHAP_PHIEUNHAP" Association="tbl_QLHieuThuocModel.FK_CTPHIEUNHAP_PHIEUNHAP">
+      <End Role="tbl_PHIEUNHAP" EntitySet="tbl_PHIEUNHAP" />
+      <End Role="tbl_CTPHIEUNHAP" EntitySet="tbl_CTPHIEUNHAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DUOCSI_NGUOIDUNG" Association="tbl_QLHieuThuocModel.FK_DUOCSI_NGUOIDUNG">
+      <End Role="tbl_NGUOIDUNG" EntitySet="tbl_NGUOIDUNG" />
+      <End Role="tbl_DUOCSI" EntitySet="tbl_DUOCSI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOADON_DUOCSI" Association="tbl_QLHieuThuocModel.FK_HOADON_DUOCSI">
+      <End Role="tbl_DUOCSI" EntitySet="tbl_DUOCSI" />
+      <End Role="tbl_HOADON" EntitySet="tbl_HOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PHIEUNHAP_DUOCSI" Association="tbl_QLHieuThuocModel.FK_PHIEUNHAP_DUOCSI">
+      <End Role="tbl_DUOCSI" EntitySet="tbl_DUOCSI" />
+      <End Role="tbl_PHIEUNHAP" EntitySet="tbl_PHIEUNHAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOADON_KHACHHANG" Association="tbl_QLHieuThuocModel.FK_HOADON_KHACHHANG">
+      <End Role="tbl_KHACHHANG" EntitySet="tbl_KHACHHANG" />
+      <End Role="tbl_HOADON" EntitySet="tbl_HOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PHIEUNHAP_tbl_KHO" Association="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_KHO">
+      <End Role="tbl_KHO" EntitySet="tbl_KHO" />
+      <End Role="tbl_PHIEUNHAP" EntitySet="tbl_PHIEUNHAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SANPHAM_LOAI" Association="tbl_QLHieuThuocModel.FK_SANPHAM_LOAI">
+      <End Role="tbl_LOAI" EntitySet="tbl_LOAI" />
+      <End Role="tbl_SANPHAM" EntitySet="tbl_SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_PHIEUNHAP_tbl_NHACUNGCAP" Association="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_NHACUNGCAP">
+      <End Role="tbl_NHACUNGCAP" EntitySet="tbl_NHACUNGCAP" />
+      <End Role="tbl_PHIEUNHAP" EntitySet="tbl_PHIEUNHAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SANPHAM_NHASANXUAT" Association="tbl_QLHieuThuocModel.FK_SANPHAM_NHASANXUAT">
+      <End Role="tbl_NHASANXUAT" EntitySet="tbl_NHASANXUAT" />
+      <End Role="tbl_SANPHAM" EntitySet="tbl_SANPHAM" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbl_CHITIETHANGHOA">
+    <Key>
+      <PropertyRef Name="MACTSP" />
+    </Key>
+    <Property Name="MACTSP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="HSD" Type="Double" />
+    <Property Name="NSX" Type="DateTime" Precision="3" />
+    <Property Name="MASP" Type="Int32" />
+    <Property Name="GiaNhap" Type="Double" />
+    <Property Name="GiaBan" Type="Double" />
+    <Property Name="MaKho" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_KHO" Relationship="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_KHO" FromRole="tbl_CHITIETHANGHOA" ToRole="tbl_KHO" />
+    <NavigationProperty Name="tbl_SANPHAM" Relationship="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_SANPHAM" FromRole="tbl_CHITIETHANGHOA" ToRole="tbl_SANPHAM" />
+    <NavigationProperty Name="tbl_CTHOADON" Relationship="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_CHITIETHANGHOA" FromRole="tbl_CHITIETHANGHOA" ToRole="tbl_CTHOADON" />
+    <NavigationProperty Name="tbl_CTPHIEUNHAP" Relationship="tbl_QLHieuThuocModel.FK_tbl_CTPHIEUNHAP_tbl_CHITIETHANGHOA" FromRole="tbl_CHITIETHANGHOA" ToRole="tbl_CTPHIEUNHAP" />
+  </EntityType>
+  <EntityType Name="tbl_CTHOADON">
+    <Key>
+      <PropertyRef Name="MaCTHD" />
+    </Key>
+    <Property Name="MaHD" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaCTSP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="DonGia" Type="Double" />
+    <Property Name="MaCTHD" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_CHITIETHANGHOA" Relationship="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_CHITIETHANGHOA" FromRole="tbl_CTHOADON" ToRole="tbl_CHITIETHANGHOA" />
+    <NavigationProperty Name="tbl_HOADON" Relationship="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_HOADON" FromRole="tbl_CTHOADON" ToRole="tbl_HOADON" />
+  </EntityType>
+  <EntityType Name="tbl_CTPHIEUNHAP">
+    <Key>
+      <PropertyRef Name="MaCTPN" />
+    </Key>
+    <Property Name="MaCTPN" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MaPN" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MACTSP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NgayNhap" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TongTien" Type="Double" />
+    <NavigationProperty Name="tbl_CHITIETHANGHOA" Relationship="tbl_QLHieuThuocModel.FK_tbl_CTPHIEUNHAP_tbl_CHITIETHANGHOA" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_CHITIETHANGHOA" />
+    <NavigationProperty Name="tbl_PHIEUNHAP" Relationship="tbl_QLHieuThuocModel.FK_CTPHIEUNHAP_PHIEUNHAP" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_PHIEUNHAP" />
+  </EntityType>
+  <EntityType Name="tbl_DUOCSI">
+    <Key>
+      <PropertyRef Name="MaDuocSi" />
+    </Key>
+    <Property Name="MaDuocSi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDuocSi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TenDangNhap" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_NGUOIDUNG" Relationship="tbl_QLHieuThuocModel.FK_DUOCSI_NGUOIDUNG" FromRole="tbl_DUOCSI" ToRole="tbl_NGUOIDUNG" />
+    <NavigationProperty Name="tbl_HOADON" Relationship="tbl_QLHieuThuocModel.FK_HOADON_DUOCSI" FromRole="tbl_DUOCSI" ToRole="tbl_HOADON" />
+    <NavigationProperty Name="tbl_PHIEUNHAP" Relationship="tbl_QLHieuThuocModel.FK_PHIEUNHAP_DUOCSI" FromRole="tbl_DUOCSI" ToRole="tbl_PHIEUNHAP" />
+  </EntityType>
+  <EntityType Name="tbl_HOADON">
+    <Key>
+      <PropertyRef Name="MaHD" />
+    </Key>
+    <Property Name="MaHD" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaDuocSi" Type="Int32" Nullable="false" />
+    <Property Name="NgayLap" Type="DateTime" Precision="0" />
+    <Property Name="TongTien" Type="Double" />
+    <Property Name="MaKH" Type="Int32" />
+    <Property Name="Thang" Type="Int32" />
+    <Property Name="Nam" Type="Int32" />
+    <NavigationProperty Name="tbl_CTHOADON" Relationship="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_HOADON" FromRole="tbl_HOADON" ToRole="tbl_CTHOADON" />
+    <NavigationProperty Name="tbl_DUOCSI" Relationship="tbl_QLHieuThuocModel.FK_HOADON_DUOCSI" FromRole="tbl_HOADON" ToRole="tbl_DUOCSI" />
+    <NavigationProperty Name="tbl_KHACHHANG" Relationship="tbl_QLHieuThuocModel.FK_HOADON_KHACHHANG" FromRole="tbl_HOADON" ToRole="tbl_KHACHHANG" />
+  </EntityType>
+  <EntityType Name="tbl_KHACHHANG">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_HOADON" Relationship="tbl_QLHieuThuocModel.FK_HOADON_KHACHHANG" FromRole="tbl_KHACHHANG" ToRole="tbl_HOADON" />
+  </EntityType>
+  <EntityType Name="tbl_KHO">
+    <Key>
+      <PropertyRef Name="MaKho" />
+    </Key>
+    <Property Name="MaKho" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ViTri" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TenKho" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_CHITIETHANGHOA" Relationship="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_KHO" FromRole="tbl_KHO" ToRole="tbl_CHITIETHANGHOA" />
+    <NavigationProperty Name="tbl_PHIEUNHAP" Relationship="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_KHO" FromRole="tbl_KHO" ToRole="tbl_PHIEUNHAP" />
+  </EntityType>
+  <EntityType Name="tbl_LOAI">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_SANPHAM" Relationship="tbl_QLHieuThuocModel.FK_SANPHAM_LOAI" FromRole="tbl_LOAI" ToRole="tbl_SANPHAM" />
+  </EntityType>
+  <EntityType Name="tbl_NGUOIDUNG">
+    <Key>
+      <PropertyRef Name="TenDangNhap" />
+    </Key>
+    <Property Name="TenDangNhap" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QuanTri" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tbl_DUOCSI" Relationship="tbl_QLHieuThuocModel.FK_DUOCSI_NGUOIDUNG" FromRole="tbl_NGUOIDUNG" ToRole="tbl_DUOCSI" />
+  </EntityType>
+  <EntityType Name="tbl_NHACUNGCAP">
+    <Key>
+      <PropertyRef Name="MaNCC" />
+    </Key>
+    <Property Name="MaNCC" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNCC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_PHIEUNHAP" Relationship="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_NHACUNGCAP" FromRole="tbl_NHACUNGCAP" ToRole="tbl_PHIEUNHAP" />
+  </EntityType>
+  <EntityType Name="tbl_NHASANXUAT">
+    <Key>
+      <PropertyRef Name="MaNSX" />
+    </Key>
+    <Property Name="MaNSX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNSX" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_SANPHAM" Relationship="tbl_QLHieuThuocModel.FK_SANPHAM_NHASANXUAT" FromRole="tbl_NHASANXUAT" ToRole="tbl_SANPHAM" />
+  </EntityType>
+  <EntityType Name="tbl_PHIEUNHAP">
+    <Key>
+      <PropertyRef Name="MaPN" />
+    </Key>
+    <Property Name="MaPN" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaDuocSi" Type="Int32" Nullable="false" />
+    <Property Name="TongTien" Type="Double" />
+    <Property Name="NgayNhapHang" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="MaNCC" Type="Int32" />
+    <Property Name="MaKho" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_CTPHIEUNHAP" Relationship="tbl_QLHieuThuocModel.FK_CTPHIEUNHAP_PHIEUNHAP" FromRole="tbl_PHIEUNHAP" ToRole="tbl_CTPHIEUNHAP" />
+    <NavigationProperty Name="tbl_DUOCSI" Relationship="tbl_QLHieuThuocModel.FK_PHIEUNHAP_DUOCSI" FromRole="tbl_PHIEUNHAP" ToRole="tbl_DUOCSI" />
+    <NavigationProperty Name="tbl_KHO" Relationship="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_KHO" FromRole="tbl_PHIEUNHAP" ToRole="tbl_KHO" />
+    <NavigationProperty Name="tbl_NHACUNGCAP" Relationship="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_NHACUNGCAP" FromRole="tbl_PHIEUNHAP" ToRole="tbl_NHACUNGCAP" />
+  </EntityType>
+  <EntityType Name="tbl_SANPHAM">
+    <Key>
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaSP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ThanhPhan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaNSX" Type="Int32" />
+    <Property Name="MaLoai" Type="Int32" />
+    <Property Name="HinhAnh" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Gia" Type="Double" />
+    <NavigationProperty Name="tbl_CHITIETHANGHOA" Relationship="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_SANPHAM" FromRole="tbl_SANPHAM" ToRole="tbl_CHITIETHANGHOA" />
+    <NavigationProperty Name="tbl_LOAI" Relationship="tbl_QLHieuThuocModel.FK_SANPHAM_LOAI" FromRole="tbl_SANPHAM" ToRole="tbl_LOAI" />
+    <NavigationProperty Name="tbl_NHASANXUAT" Relationship="tbl_QLHieuThuocModel.FK_SANPHAM_NHASANXUAT" FromRole="tbl_SANPHAM" ToRole="tbl_NHASANXUAT" />
+  </EntityType>
+  <Association Name="FK_tbl_CHITIETHANGHOA_tbl_KHO">
+    <End Type="tbl_QLHieuThuocModel.tbl_KHO" Role="tbl_KHO" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA" Role="tbl_CHITIETHANGHOA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_KHO">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tbl_CHITIETHANGHOA">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_CHITIETHANGHOA_tbl_SANPHAM">
+    <End Type="tbl_QLHieuThuocModel.tbl_SANPHAM" Role="tbl_SANPHAM" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA" Role="tbl_CHITIETHANGHOA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SANPHAM">
+        <PropertyRef Name="MaSP" />
+      </Principal>
+      <Dependent Role="tbl_CHITIETHANGHOA">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_CTHOADON_tbl_CHITIETHANGHOA">
+    <End Type="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA" Role="tbl_CHITIETHANGHOA" Multiplicity="1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_CTHOADON" Role="tbl_CTHOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_CHITIETHANGHOA">
+        <PropertyRef Name="MACTSP" />
+      </Principal>
+      <Dependent Role="tbl_CTHOADON">
+        <PropertyRef Name="MaCTSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_CTPHIEUNHAP_tbl_CHITIETHANGHOA">
+    <End Type="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA" Role="tbl_CHITIETHANGHOA" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_CTPHIEUNHAP" Role="tbl_CTPHIEUNHAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_CHITIETHANGHOA">
+        <PropertyRef Name="MACTSP" />
+      </Principal>
+      <Dependent Role="tbl_CTPHIEUNHAP">
+        <PropertyRef Name="MACTSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_CTHOADON_tbl_HOADON">
+    <End Type="tbl_QLHieuThuocModel.tbl_HOADON" Role="tbl_HOADON" Multiplicity="1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_CTHOADON" Role="tbl_CTHOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_HOADON">
+        <PropertyRef Name="MaHD" />
+      </Principal>
+      <Dependent Role="tbl_CTHOADON">
+        <PropertyRef Name="MaHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CTPHIEUNHAP_PHIEUNHAP">
+    <End Type="tbl_QLHieuThuocModel.tbl_PHIEUNHAP" Role="tbl_PHIEUNHAP" Multiplicity="1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_CTPHIEUNHAP" Role="tbl_CTPHIEUNHAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_PHIEUNHAP">
+        <PropertyRef Name="MaPN" />
+      </Principal>
+      <Dependent Role="tbl_CTPHIEUNHAP">
+        <PropertyRef Name="MaPN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DUOCSI_NGUOIDUNG">
+    <End Type="tbl_QLHieuThuocModel.tbl_NGUOIDUNG" Role="tbl_NGUOIDUNG" Multiplicity="1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_DUOCSI" Role="tbl_DUOCSI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_NGUOIDUNG">
+        <PropertyRef Name="TenDangNhap" />
+      </Principal>
+      <Dependent Role="tbl_DUOCSI">
+        <PropertyRef Name="TenDangNhap" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOADON_DUOCSI">
+    <End Type="tbl_QLHieuThuocModel.tbl_DUOCSI" Role="tbl_DUOCSI" Multiplicity="1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_HOADON" Role="tbl_HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_DUOCSI">
+        <PropertyRef Name="MaDuocSi" />
+      </Principal>
+      <Dependent Role="tbl_HOADON">
+        <PropertyRef Name="MaDuocSi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PHIEUNHAP_DUOCSI">
+    <End Type="tbl_QLHieuThuocModel.tbl_DUOCSI" Role="tbl_DUOCSI" Multiplicity="1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_PHIEUNHAP" Role="tbl_PHIEUNHAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_DUOCSI">
+        <PropertyRef Name="MaDuocSi" />
+      </Principal>
+      <Dependent Role="tbl_PHIEUNHAP">
+        <PropertyRef Name="MaDuocSi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOADON_KHACHHANG">
+    <End Type="tbl_QLHieuThuocModel.tbl_KHACHHANG" Role="tbl_KHACHHANG" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_HOADON" Role="tbl_HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_KHACHHANG">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="tbl_HOADON">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PHIEUNHAP_tbl_KHO">
+    <End Type="tbl_QLHieuThuocModel.tbl_KHO" Role="tbl_KHO" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_PHIEUNHAP" Role="tbl_PHIEUNHAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_KHO">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tbl_PHIEUNHAP">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SANPHAM_LOAI">
+    <End Type="tbl_QLHieuThuocModel.tbl_LOAI" Role="tbl_LOAI" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_SANPHAM" Role="tbl_SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_LOAI">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="tbl_SANPHAM">
+        <PropertyRef Name="MaLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_PHIEUNHAP_tbl_NHACUNGCAP">
+    <End Type="tbl_QLHieuThuocModel.tbl_NHACUNGCAP" Role="tbl_NHACUNGCAP" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_PHIEUNHAP" Role="tbl_PHIEUNHAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_NHACUNGCAP">
+        <PropertyRef Name="MaNCC" />
+      </Principal>
+      <Dependent Role="tbl_PHIEUNHAP">
+        <PropertyRef Name="MaNCC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SANPHAM_NHASANXUAT">
+    <End Type="tbl_QLHieuThuocModel.tbl_NHASANXUAT" Role="tbl_NHASANXUAT" Multiplicity="0..1" />
+    <End Type="tbl_QLHieuThuocModel.tbl_SANPHAM" Role="tbl_SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_NHASANXUAT">
+        <PropertyRef Name="MaNSX" />
+      </Principal>
+      <Dependent Role="tbl_SANPHAM">
+        <PropertyRef Name="MaNSX" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

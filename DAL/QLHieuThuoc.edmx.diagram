@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="45a63f5ce955456abc68eaf8bcb68751" Name="Diagram1">
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA" Width="1.5" PointX="3" PointY="4.5" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_CTHOADON" Width="1.5" PointX="8.25" PointY="5" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_CTPHIEUNHAP" Width="1.5" PointX="11.25" PointY="5" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_DUOCSI" Width="1.5" PointX="3.75" PointY="17.25" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_HOADON" Width="1.5" PointX="6" PointY="15.75" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_KHACHHANG" Width="1.5" PointX="3.75" PointY="14.5" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_KHO" Width="1.5" PointX="0.75" PointY="5.25" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_LOAI" Width="1.5" PointX="1.5" PointY="11.875" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_NGUOIDUNG" Width="1.5" PointX="1.5" PointY="17.75" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_NHACUNGCAP" Width="1.5" PointX="3.75" PointY="1.125" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_NHASANXUAT" Width="1.5" PointX="1.5" PointY="9.625" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_PHIEUNHAP" Width="1.5" PointX="6" PointY="4.625" />
+        <EntityTypeShape EntityType="tbl_QLHieuThuocModel.tbl_SANPHAM" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_KHO" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_CHITIETHANGHOA_tbl_SANPHAM" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_CHITIETHANGHOA" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_CTPHIEUNHAP_tbl_CHITIETHANGHOA" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_CTHOADON_tbl_HOADON" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_CTPHIEUNHAP_PHIEUNHAP" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_DUOCSI_NGUOIDUNG" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_HOADON_DUOCSI" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_PHIEUNHAP_DUOCSI" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_HOADON_KHACHHANG" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_KHO" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_SANPHAM_LOAI" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_tbl_PHIEUNHAP_tbl_NHACUNGCAP" />
+        <AssociationConnector Association="tbl_QLHieuThuocModel.FK_SANPHAM_NHASANXUAT" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

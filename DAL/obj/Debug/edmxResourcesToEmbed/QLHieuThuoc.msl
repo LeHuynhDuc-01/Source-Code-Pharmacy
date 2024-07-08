@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tbl_QLHieuThuocModelStoreContainer" CdmEntityContainer="tbl_QLHieuThuocEntities">
+    <EntitySetMapping Name="tbl_CHITIETHANGHOA">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_CHITIETHANGHOA">
+        <MappingFragment StoreEntitySet="tbl_CHITIETHANGHOA">
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="GiaNhap" ColumnName="GiaNhap" />
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="NSX" ColumnName="NSX" />
+          <ScalarProperty Name="HSD" ColumnName="HSD" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="MACTSP" ColumnName="MACTSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CTHOADON">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_CTHOADON">
+        <MappingFragment StoreEntitySet="tbl_CTHOADON">
+          <ScalarProperty Name="MaCTHD" ColumnName="MaCTHD" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="MaCTSP" ColumnName="MaCTSP" />
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CTPHIEUNHAP">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_CTPHIEUNHAP">
+        <MappingFragment StoreEntitySet="tbl_CTPHIEUNHAP">
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="NgayNhap" ColumnName="NgayNhap" />
+          <ScalarProperty Name="MACTSP" ColumnName="MACTSP" />
+          <ScalarProperty Name="MaPN" ColumnName="MaPN" />
+          <ScalarProperty Name="MaCTPN" ColumnName="MaCTPN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DUOCSI">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_DUOCSI">
+        <MappingFragment StoreEntitySet="tbl_DUOCSI">
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="TenDuocSi" ColumnName="TenDuocSi" />
+          <ScalarProperty Name="MaDuocSi" ColumnName="MaDuocSi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HOADON">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_HOADON">
+        <MappingFragment StoreEntitySet="tbl_HOADON">
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="Thang" ColumnName="Thang" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+          <ScalarProperty Name="MaDuocSi" ColumnName="MaDuocSi" />
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KHACHHANG">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_KHACHHANG">
+        <MappingFragment StoreEntitySet="tbl_KHACHHANG">
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KHO">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_KHO">
+        <MappingFragment StoreEntitySet="tbl_KHO">
+          <ScalarProperty Name="TenKho" ColumnName="TenKho" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_LOAI">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_LOAI">
+        <MappingFragment StoreEntitySet="tbl_LOAI">
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+          <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NGUOIDUNG">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_NGUOIDUNG">
+        <MappingFragment StoreEntitySet="tbl_NGUOIDUNG">
+          <ScalarProperty Name="QuanTri" ColumnName="QuanTri" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NHACUNGCAP">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_NHACUNGCAP">
+        <MappingFragment StoreEntitySet="tbl_NHACUNGCAP">
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_NHASANXUAT">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_NHASANXUAT">
+        <MappingFragment StoreEntitySet="tbl_NHASANXUAT">
+          <ScalarProperty Name="TenNSX" ColumnName="TenNSX" />
+          <ScalarProperty Name="MaNSX" ColumnName="MaNSX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PHIEUNHAP">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_PHIEUNHAP">
+        <MappingFragment StoreEntitySet="tbl_PHIEUNHAP">
+          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
+          <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="NgayNhapHang" ColumnName="NgayNhapHang" />
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="MaDuocSi" ColumnName="MaDuocSi" />
+          <ScalarProperty Name="MaPN" ColumnName="MaPN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SANPHAM">
+      <EntityTypeMapping TypeName="tbl_QLHieuThuocModel.tbl_SANPHAM">
+        <MappingFragment StoreEntitySet="tbl_SANPHAM">
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
+          <ScalarProperty Name="MaNSX" ColumnName="MaNSX" />
+          <ScalarProperty Name="ThanhPhan" ColumnName="ThanhPhan" />
+          <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

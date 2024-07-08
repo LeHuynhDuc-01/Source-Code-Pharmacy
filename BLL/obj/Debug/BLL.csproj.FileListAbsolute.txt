@@ -1,0 +1,15 @@
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\BLL.dll.config
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\BLL.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\BLL.pdb
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\DAL.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\EntityFramework.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\DAL.pdb
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\DAL.dll.config
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\EntityFramework.xml
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\obj\Debug\BLL.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\BLL\obj\Debug\BLL.pdb

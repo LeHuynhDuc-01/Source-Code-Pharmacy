@@ -1,0 +1,12 @@
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\DAL.dll.config
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\DAL.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\DAL.pdb
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\EntityFramework.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\EntityFramework.xml
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\obj\Debug\DAL.dll
+D:\CSharp\LAPTRINHWEB\QL_HieuThuocWinForm\DAL\obj\Debug\DAL.pdb
